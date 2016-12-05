@@ -1,0 +1,229 @@
+/*---COLOUR pallete------------------------------------------
+
+#e3f2fd blue lighten-5
+#bbdefb blue lighten-4
+#90caf9 blue lighten-3
+#64b5f6 blue lighten-2
+#42a5f5 blue lighten-1
+#2196f3 blue
+#1e88e5 blue darken-1
+#1976d2 blue darken-2
+#1565c0 blue darken-3
+#0d47a1 blue darken-4
+#82b1ff blue accent-1
+#448aff blue accent-2
+#2979ff blue accent-3
+#2962ff blue accent-4
+--I really want to use Sass :((
+*/
+
+/*---GlOBAL variables------------------------------------------*/
+
+body{
+  background-color: #E0E0E0;
+  padding: 0;
+  margin: 0;
+}
+.material{ /* that fancy shadow around divs in material design */
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+  padding-bottom: 2px;
+}
+
+/*---HEADER variables------------------------------------------*/
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    max-width: 100%;
+    background-color: #2196f3;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0;
+  background-color: #2196f3;
+  padding: 15px;
+}
+
+.nav-wrapper li{
+  padding: 5px;
+  width:150px;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/*---PAGE variables------------------------------------------*/
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 100%
+  padding-left: 0em;
+  padding-right: 0em;
+  margin-top: 0vh;
+}
+.content_inner{
+  max-width: 25%;
+  padding: 0px;
+  min-width: 400px;
+  margin: 1em;
+}
+.content_outer{
+  max-width: 40%;
+  padding: 0px;
+  min-width: 400px;
+  margin: 1em;
+}
+.content_outer div{
+  background: #FFFFFF;
+}
+.subdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.alignleft {
+  justify-content: flex-start;
+  align-content: space-around;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.subdiv div{
+  background-color: #42a5f5
+}
+
+/*---FOOTER variables------------------------------------------*/
+
+
+/*---TEXT variables------------------------------------------*/
+.content_inner p{
+  border-bottom: solid 1px #2979ff;
+  color: #e3f2fd;
+  text-align: right;
+}
+.content_outer p{
+  border-bottom: solid 1px #9E9E9E;
+  color: #000000;
+  text-align: center;
+}
+.darktext{
+  color:black;
+}
+p{
+  margin: auto;
+  padding: 15px;
+  max-width: 100%;
+  min-width: 30%
+  font-family: 'Roboto', sans-serif;
+}
+.colorvar{
+  background-color: white;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  color: #e3f2fd;
+}
+li{
+  list-style: none;
+}
+.blue_background{
+  background-color: #42a5f5
+}
+.subdiv h2{
+  font-family: 'Roboto', sans-serif;
+  color: #757575;
+}
+.subdiv p{
+  width: 100%;
+  text-align: left;
+  padding: 25px;
+}
+/*---IMAGE variables------------------------------------------*/
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.cover{
+  max-width: 100%;
+  max-height: 50%
+}
+.subdiv img{
+  max-width: 48px;
+  max-height: 48px;
+  align-self:center;
+  padding-left: 15px;
+  filter: invert(1);
+}
+.content_outer img{
+  filter: invert(40%);
+  padding-right: 30px;
+}
+/*---BARS css---------------------------------*/
+.barscontainer {
+  padding: 0px;
+  max-width: 350px;
+  min-width: 150px;
+  margin: 0 auto;
+}
+.progressBar {
+  margin-bottom: 1em;
+}
+
+.progressBar h4 {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 7px;
+  color: white;
+
+}
+
+.progressBarContainer {
+  width: 100%;
+  max-width: 350px;
+  height: 5px;
+  background: #bbdefb;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.progressBarValue {
+  height: 1em;
+  float: left;
+  background: #0d47a1;
+}
+
+.value-00 { width: 0; }
+
+.value-10 { width: 10%; }
+
+.value-20 { width: 20%; }
+
+.value-30 { width: 30%; }
+
+.value-40 { width: 40%; }
+
+.value-50 { width: 50%; }
+
+.value-60 { width: 60%; }
+
+.value-70 { width: 70%; }
+
+.value-80 { width: 80%; }
+
+.value-90 { width: 90%; }
+
+.value-100 { width: 100%; }
