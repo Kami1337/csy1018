@@ -1,5 +1,5 @@
 # csy1018
-# 05/12 - Intial commit
+# 05/12 - Initial commit
     Layout complete - site is 100% responsive
     Material design css implemented
     CSS - About 90% finished
