@@ -18,7 +18,9 @@
 */
 
 /*---GlOBAL variables------------------------------------------*/
-
+.seperator{
+  margin: 20px;
+}
 body{
   background-color: #E0E0E0;
   padding: 0;
@@ -29,8 +31,11 @@ body{
   padding-bottom: 2px;
 }
 
-/*---HEADER variables------------------------------------------*/
-nav{
+/*---NAVIGATION variables------------------------------------------*/
+
+/*nav{
+----Not using header. could reuse in future--
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,7 +46,11 @@ nav{
     margin: auto;
     justify-content: center;
 }
-
+*/
+nav{
+  padding: 0px;
+  margin: 0px;
+}
 .nav-wrapper{
   display: flex;
   flex-direction: row;
@@ -49,19 +58,34 @@ nav{
   flex-flow: row wrap;
   justify-content: space-around;
   max-width: 100%;
-  margin: 0;
-  background-color: #2196f3;
-  padding: 15px;
+  margin: 0px;
+  padding: 0px;
 }
-
 .nav-wrapper li{
-  padding: 5px;
-  width:150px;
+  width:100%;
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
+  background-color: #82b1ff;
+  color: white;
+  font-size: 21px;
+  border-bottom: solid 1px #2979ff;
+  }
+
+a{ /*---Makes entire li element clickable */
+    display:inline-block;
+    padding: 10px 0px 10px 0px;
+    width:100%;
+    text-decoration: none;
+    color:white;
+}
+#active{ /*css for active button*/
+  background-color: #42a5f5;
 }
 
 /*---PAGE variables------------------------------------------*/
+.space{
+  padding: 20px;
+}
 .content {
   display: flex;
   flex-direction: row;
@@ -89,11 +113,23 @@ nav{
 .content_outer div{
   background: #FFFFFF;
 }
+.content_subdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #42a5f5;
+  padding: 0px;
+  margin: 0px;
+
+  }
 .subdiv {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: space-between;
+  background-color: #42a5f5;
+  padding: 0px;
 }
 
 .alignleft {
@@ -115,6 +151,9 @@ nav{
   color: #e3f2fd;
   text-align: right;
 }
+#borderless{
+  border-bottom: none;
+}
 .content_outer p{
   border-bottom: solid 1px #9E9E9E;
   color: #000000;
@@ -127,7 +166,7 @@ p{
   margin: auto;
   padding: 15px;
   max-width: 100%;
-  min-width: 30%
+  min-width: 30%;
   font-family: 'Roboto', sans-serif;
 }
 .colorvar{
@@ -152,6 +191,11 @@ li{
   text-align: left;
   padding: 25px;
 }
+.content_subdiv p{
+  width: 100%;
+  text-align: left;
+  padding: 25px 15px 25px 5px;
+}
 /*---IMAGE variables------------------------------------------*/
 .logo{
     height: 60px;
@@ -159,7 +203,7 @@ li{
 }
 .cover{
   max-width: 100%;
-  max-height: 50%
+  max-height: 100%;
 }
 .subdiv img{
   max-width: 48px;
@@ -227,3 +271,45 @@ li{
 .value-90 { width: 90%; }
 
 .value-100 { width: 100%; }
+
+/*--------Animations-----------------------*/
+/* Sweep To Right -hover.css */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #42a5f5;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
