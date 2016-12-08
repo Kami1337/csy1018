@@ -138,6 +138,9 @@ a {
     background-color: #42a5f5;
     padding: 0px;
 }
+.subdiv div{
+  border-bottom: solid 1px #9E9E9E;
+}
 
 .alignleft {
     /*segment titles css*/
@@ -146,22 +149,42 @@ a {
     padding-left: 20px;
     padding-top: 20px;
 }
+.alignleft_subheading {
+    /*segment titles css*/
+    justify-content: flex-start;
+    align-content: space-around;
+}
 
 .subdiv div {
     background-color: #42a5f5
 }
 
 #limiter {
-    padding-right: 20px;
-    padding-left: 3em;
+    padding-left: 7.25em;
+    padding-right: 3em;
+}
+.borderflex{
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-direction: column;
 }
 
 
 /*---FOOTER variables------------------------------------------*/
 
-
 /*---TEXT variables------------------------------------------*/
+h1{
+  font-size: 20px;
+  padding: 0px;
+  text-align: left;
+}
 
+h3{
+  font-size: 14px;
+  padding: 0px;
+  text-align: left;
+}
 .content_inner p {
     /*left side page text css*/
     border-bottom: solid 1px #2979ff;
@@ -176,14 +199,14 @@ a {
 .content_subdiv p {
     /*right side page text css*/
     border-bottom: solid 1px #9E9E9E;
-    color: #000000;
-    text-align: center;
+    color: #757575;
+    text-align: left;
     max-width: 100%;
 }
 
 .content_subdiv h1 {
     /*heading css*/
-    color: #757575;
+    color: #515151;
     text-align: left;
     max-width: 100%;
     font-family: 'Noto Sans', sans-serif;
@@ -235,9 +258,12 @@ li {
 
     width: 100%;
     text-align: left;
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 20px 0px;
 }
-
+.content_outer p{
+  color: #black;
+  text-align: left;
+}
 /*---IMAGE variables------------------------------------------*/
 .logo {
     height: 60px;
@@ -257,6 +283,20 @@ li {
 .content_outer img {
     filter: invert(40%);
     padding-right: 30px;
+}
+
+.interests{
+  justify-content: space-around;
+  flex: 1;
+  align-items: center;
+  align-self: center;
+  margin: auto;
+}
+
+.interests img{
+  max-width: 48px;
+  max-height: 48px;
+  padding: 24px;
 }
 
 /*---BARS css---------------------------------*/

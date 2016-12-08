@@ -1,3 +1,6 @@
+# 07/12 – Added most of text, added new icons and images. Cleaned up css
+	What the title said
+
 # 06/12 - Added navigation & animation, removed redundancies
     Added navigation & animation
 	Fixed some git stuff
