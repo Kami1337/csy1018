@@ -33,7 +33,7 @@ body {
 .material {
     /* that fancy shadow around divs in material design */
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
-    padding-bottom: 2px;
+    padding: 0px;
 }
 
 
@@ -65,7 +65,7 @@ nav {
     border-bottom: solid 1px #2979ff;
 }
 
-a {
+.nav-wrapper a {
     /*---Makes entire li element clickable */
     display: inline-block;
     padding: 10px 0px 10px 0px;
@@ -174,6 +174,14 @@ a {
 /*---FOOTER variables------------------------------------------*/
 
 /*---TEXT variables------------------------------------------*/
+p {
+    margin: auto;
+    padding: 15px;
+    max-width: 100%;
+    min-width: 30%;
+    font-family: 'Roboto', sans-serif;
+}
+
 h1{
   font-size: 20px;
   padding: 0px;
@@ -189,7 +197,8 @@ h3{
     /*left side page text css*/
     border-bottom: solid 1px #2979ff;
     color: #e3f2fd;
-    text-align: right;
+    font-size:18px;
+    font-family: 'Noto', sans-serif;
 }
 
 #borderless {
@@ -220,20 +229,11 @@ h3{
     font-family: 'Roboto', sans-serif;
 }
 
-p {
-    margin: auto;
-    padding: 15px;
-    max-width: 100%;
-    min-width: 30%;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-}
 h2 {
     font-family: 'Roboto', sans-serif;
     color: #e3f2fd;
 }
+
 li {
     list-style: none;
 }
@@ -280,9 +280,13 @@ li {
     padding-left: 15px;
     filter: invert(1);
 }
-.content_outer img {
+.alignleft img {
     filter: invert(40%);
     padding-right: 30px;
+}
+.alignleft_subheading img{
+  filter: invert(40%);
+  padding-right: 30px;
 }
 
 .interests{
@@ -296,7 +300,12 @@ li {
 .interests img{
   max-width: 48px;
   max-height: 48px;
-  padding: 24px;
+  padding: 0px 48px 24px 0px;
+}
+
+#noformat{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*---BARS css---------------------------------*/
@@ -403,4 +412,11 @@ li {
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+/*---Querries------------------------------------------------------*/
+
+@media only screen and (max-width: 880px) {
+    #noformat {
+        display: none;
+    }
 }
