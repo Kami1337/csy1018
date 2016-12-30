@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-
-    <title>cv</title>
+    <title>contact</title>
     <link rel="stylesheet" href="css/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -14,8 +14,10 @@
     don't really need one
     </header>-->
     <div class="content">
+        <!--left part of website-->
         <div class="content_inner material">
             <img class="cover" src="images/cover2.jpg" alt="it is i">
+            <!--navigation-->
             <nav>
                 <ul class="nav-wrapper">
                     <li class="hvr-sweep-to-right"><a href="index.html">Home</a></li>
@@ -24,10 +26,11 @@
                     <li class="hvr-sweep-to-right"><a href="bio.html">Bio</a></li>
                 </ul>
             </nav>
+            <!--/navigation-->
+            <!--infobar-->
             <div class="subdiv">
                 <img src="images/aboutme.png" alt="about me">
                 <p id="me">Luka Lalic</p>
-
             </div>
             <div class="subdiv">
                 <img src="images/contact.png" alt="contact number">
@@ -41,11 +44,12 @@
                 <img src="images/home.png" alt="adresss">
                 <p>Street number town state</p>
             </div>
-            <!--Skillbar--------------------------------------->
             <div class="subdiv">
                 <img src="images/skills.png" alt="skills">
-                <p id="borderless">Professional Skills</p>
+                <p class="borderless">Professional Skills</p>
             </div>
+            <!--/infobar-->
+            <!--Skillbar-->
             <div class="barscontainer">
                 <h4>HTML5</h4>
                 <div class="progressBarContainer">
@@ -75,32 +79,35 @@
                 <div class="progressBarContainer">
                     <div class="progressBarValue value-40"></div>
                 </div>
+            <!--/Skillbar-->
             </div>
         </div>
-        <!--Skillbar end-------------------------------------->
-
-        <!--Right part of the website--------------------------------------->
+        <!--/left part of website-->
+        <!--Right part of the website-->
         <div class="content_outer">
             <img id="noformat" class="material" src="images/contact_banner.jpg" alt="education">
+            <!--form-->
             <div class="material">
-                <div class="subdiv alignleft" id="contact_form">
+                <div class="subdiv alignleft contact_form">
                     <img src="images/mail.png" id="contact_img" alt="contact">
-                    <h2 id="contact_form">Contact</h2>
+                    <h2 class="contact_form">Contact</h2>
                 </div>
                 <div id="contact_form_wrapper">
-                    <div id="contact_form">
+                    <div class="contact_form">
                         <form method="post" action="mailto:nospam@please.com" id="contact_form">
                             Name:<br>
                             <input type="text" name="name" value="Please enter your name"> e-mail:
                             <br>
                             <input type="text" name="email" value="Please enter your e-mail"> Your message<br>
                             <textarea id="textform"></textarea>
-                            <input type="submit" id="button" value="E-MAIL ME">
-                            <input type="reset" id="button" value="CLEAR">
+                            <input type="submit" id="submit-button" value="E-MAIL ME">
+                            <input type="reset" id="clear-button" value="CLEAR">
                         </form>
                     </div>
                 </div>
             </div>
+            <!--/form-->
+            <!--contact-->
             <div class="material">
                 <div class="subdiv alignleft">
                     <img src="images/social.png" alt="social media">
@@ -117,8 +124,8 @@
                     </div>
                 </div>
             </div>
+            <!--/contact-->
         </div>
     </div>
 </body>
-
 </html>

@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+
     <title>cv</title>
     <link rel="stylesheet" href="css/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -14,23 +14,20 @@
     don't really need one
     </header>-->
     <div class="content">
-        <!--left part of website-->
         <div class="content_inner material">
             <img class="cover" src="images/cover2.jpg" alt="it is i">
-            <!--navigation-->
             <nav>
                 <ul class="nav-wrapper">
-                    <li class="hvr-sweep-to-right"><a href="index.html">Home</a></li>
+                    <li class="hvr-sweep-to-right" id="active"><a href="index.html">Home</a></li>
                     <li class="hvr-sweep-to-right"><a href="contact.html">Contact</a></li>
-                    <li class="hvr-sweep-to-right" id="active"><a href="cv.html">CV</a></li>
+                    <li class="hvr-sweep-to-right"><a href="cv.html">CV</a></li>
                     <li class="hvr-sweep-to-right"><a href="bio.html">Bio</a></li>
                 </ul>
             </nav>
-            <!--/navigation-->
-            <!--infobar-->
             <div class="subdiv">
                 <img src="images/aboutme.png" alt="about me">
                 <p id="me">Luka Lalic</p>
+
             </div>
             <div class="subdiv">
                 <img src="images/contact.png" alt="contact number">
@@ -40,17 +37,15 @@
                 <img src="images/mail.png" alt="e-mail">
                 <p>luka.lalic@outlook.com</p>
             </div>
-
             <div class="subdiv">
                 <img src="images/home.png" alt="adresss">
                 <p>Street number town state</p>
             </div>
+            <!--Skillbar--------------------------------------->
             <div class="subdiv">
                 <img src="images/skills.png" alt="skills">
-                <p class="borderless">Professional Skills</p>
+                <p id="borderless">Professional Skills</p>
             </div>
-            <!--/infobar-->
-            <!--Skillbar-->
             <div class="barscontainer">
                 <h4>HTML5</h4>
                 <div class="progressBarContainer">
@@ -80,56 +75,20 @@
                 <div class="progressBarContainer">
                     <div class="progressBarValue value-40"></div>
                 </div>
-                <h4>Adobe Photoshop</h4>
-                <div class="progressBarContainer">
-                    <div class="progressBarValue value-60"></div>
-                </div>
-                <h4>Adobe Illustrator</h4>
-                <div class="progressBarContainer">
-                    <div class="progressBarValue value-40"></div>
-                </div>
-                <h4>Adobe InDesign</h4>
-                <div class="progressBarContainer">
-                    <div class="progressBarValue value-30"></div>
-                </div>
-                <h4>Microsoft Office</h4>
-                <div class="progressBarContainer">
-                    <div class="progressBarValue value-100"></div>
-                </div>
-                <h4>Coffee brewing</h4>
-                <div class="progressBarContainer">
-                    <div class="progressBarValue value-100"></div>
-                </div>
-            <!--/Skillbar-->
             </div>
         </div>
-        <!--/left part of website-->
-        <!--Right part of the website-->
+        <!--Skillbar end-------------------------------------->
+
+        <!--Right part of the website--------------------------------------->
         <div class="content_outer">
-            <img id="noformat" class="material" src="images/cv_banner.jpg" alt="education">
-            <!--about me-->
-            <div class="material">
-                <div class="subdiv alignleft">
-                    <img src="images/aboutme.png" alt="about me">
-                    <h2>About me</h2>
-                </div>
-                <ul class="traits limiter">
-                    <li>• Well-developed project management and IT skills combined with a flexible attitude to work.</li>
-                    <li>• Strong organisational skills</li>
-                    <li>• Can work independently or as part of a team.</li>
-                    <li>• Get on well with people at all levels, easily making good working relationships.</li>
-                    <li>• Adaptable and quick to learn new skills.</li>
-                </ul>
-            </div>
-            <!--/about me-->
-            <!--work experience-->
+            <img id="noformat" class="material" src="images/code_banner.jpg" alt="education">
             <div class="material">
                 <div class="subdiv alignleft">
                     <img src="images/work.png" alt="work">
                     <h2>Work Experience</h2>
                 </div>
                 <div class="content_subdiv">
-                    <div class="limiter">
+                    <div id="limiter">
                         <h1>IT consultant @ Provider service </h1>
                         <h3>Jun 2015 - Present</h3>
                         <p>
@@ -138,7 +97,7 @@
                     </div>
                 </div>
                 <div class="content_subdiv">
-                    <div class="limiter">
+                    <div id="limiter">
                         <h1>Technician @ ST-Link</h1>
                         <h3>Jan 2014 - Jun 2015</h3>
                         <p>
@@ -147,40 +106,37 @@
                     </div>
                 </div>
                 <div class="content_subdiv">
-                    <div class="limiter">
+                    <div id="limiter">
                         <h1>Web developer & designer @ Freelancer</h1>
                         <h3>Jan 2010 - Sep 2013</h3>
-                        <p class="borderless">
+                        <p id="borderless">
                             Developing websites and web based solutions for small companies including health clinics, restaurants and personal portfolios. Logo and graphical design
                         </p>
                     </div>
                 </div>
             </div>
-            <!--/work experience-->
-            <!--education-->
             <div class="material">
                 <div class="subdiv alignleft">
                     <img src="images/education.png" alt="education">
                     <h2>Education</h2>
                 </div>
                 <div class="content_subdiv alignleft_subheading">
-                    <div class="limiter">
+                    <div id="limiter">
                         <h1>Computing @ Northampton uni</h1>
                         <h3>Sep 2016 - Present</h3>
                         <h1>Graphic design @ GOGS</h1>
                         <h3>Sep 2006 - June 2010</h3>
+                        <br>
                     </div>
                 </div>
             </div>
-            <!--/education-->
-            <!--interests-->
             <div class="material">
                 <div class="subdiv alignleft">
                     <img src="images/interests.png" alt="interests">
                     <h2>Interests</h2>
                 </div>
                 <div class="content_subdiv alignleft_subheading">
-                    <div class="interests limiter">
+                    <div class="interests">
                         <img src="images/movies.png" alt="Movies" title="Movies">
                         <img src="images/books.png" alt="Books" title="Books">
                         <img src="images/gaming.png" alt="Gaming" title="Gaming">
@@ -190,15 +146,13 @@
                     </div>
                 </div>
             </div>
-            <!--/interests-->
-            <!--contact-->
             <div class="material">
                 <div class="subdiv alignleft">
                     <img src="images/social.png" alt="social media">
                     <h2>Reach out</h2>
                 </div>
                 <div class="content_subdiv alignleft_subheading">
-                    <div class="interests limiter">
+                    <div class="interests">
                         <a href="contact.html"><img src="images/mail.png" alt="e-mail" title="Send me a mail"></a>
                         <a href="https://github.com/Kami1337"><img src="images/github-box.png" alt="Git" title="Github"></a>
                         <a href="http://facebook.com/profile.php?=73322363"><img src="images/facebook-box.png" alt="Facebook" title="Facebook"></a>
@@ -208,19 +162,8 @@
                     </div>
                 </div>
             </div>
-            <!--/contact-->
-            <!--CV download-->
-            <div class="material">
-                <div class="subdiv alignleft">
-                </div>
-                <div class="content_subdiv alignleft_subheading">
-                    <div class="interests">
-                        <a href="downloads/cv.docx" download="CV-Luka Lalic"><img src="images/download.png" alt="download my cv" title="Download my CV"></a>
-                    </div>
-                </div>
-            </div>
-            <!--/CV download-->
         </div>
     </div>
 </body>
+
 </html>

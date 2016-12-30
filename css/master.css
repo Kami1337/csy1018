@@ -4,12 +4,12 @@
 3-Navigation css                -62
 4-Left part of page css         -105
 5-Right part of page css        -214
-6-Global text css               -301
-7-Images css                    -337
-8-Animations css                -384
-9-Media querries                -431
-10-Forms css                    -448
--1--COLOUR pallete------------------------------------------
+6-text css                      -306
+7-Images css                    -342
+8-Animations css                -389
+9-Media querries                -436
+10-Forms css                    -452
+-1-COLOUR pallete
 
 #e3f2fd blue lighten-5
 #bbdefb blue lighten-4
@@ -27,7 +27,7 @@
 #2962ff blue accent-4
 --I really want to use Sass :((
 
----2--GlOBAL css------------------------------------------*/
+-2-GlOBAL css-*/
 
 body {
     background-color: #E0E0E0;
@@ -53,13 +53,13 @@ body {
     margin-bottom: 20px;
 }
 
-#borderless {
+.borderless {
     /*-CSS for removing border global rule on P elements if required */
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 
-/*-3--NAVIGATION css------------------------------------------*/
+/*-3-NAVIGATION css*/
 
 nav {
     padding: 0px;
@@ -102,7 +102,7 @@ nav {
 }
 
 
-/*-4--LEFT part of PAGE css------------------------------------------*/
+/*-4-LEFT part of PAGE css*/
 
 .content_inner {
     /*left side menu css*/
@@ -146,10 +146,10 @@ nav {
     border-bottom: solid 1px #2979ff;
     color: #e3f2fd;
     font-size: 18px;
-    font-family: 'Noto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-/*----Bars css--------------------------------*/
+/*Bars css*/
 
 .barscontainer {
     /* Main container for bars section on left part of page*/
@@ -211,7 +211,7 @@ nav {
     width: 100%;
 }
 
-/*-5--RIGHT side of PAGE css----------------------------------------------*/
+/*-5-RIGHT side of PAGE css*/
 
 .content_outer {
     /*right side page container*/
@@ -225,7 +225,8 @@ nav {
     /*right side page container text css*/
     padding-left: 7.25em;
     padding-right: 3em;
-    max-width: 100% border-bottom: solid 1px #9E9E9E;
+    max-width: 100%;
+    border-bottom: solid 1px #9E9E9E;
     color: #757575;
     text-align: left;
     max-width: 100%;
@@ -264,6 +265,10 @@ nav {
     max-width: 100%;
 }
 
+.traits{
+    padding-bottom: 1em;
+}
+
 .traits li {
     /*-CSS for li elements within traits class*/
     color: #757575;
@@ -271,6 +276,7 @@ nav {
     max-width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 1em;
 }
 
 .content_subdiv h1 {
@@ -291,14 +297,14 @@ nav {
     font-size: 1.05em;
 }
 
-#limiter {
-    /*-Sets padding for parent #limiter div */
+.limiter {
+    /*-Sets padding for parent limiter div */
     padding-left: 7.25em;
     padding-right: 3em;
     max-width: 100%
 }
 
-/*-6--global text css------------------------------------------*/
+/*-6-text css-*/
 
 p {
     /*-global css for P elements */
@@ -334,7 +340,7 @@ li {
     padding: 0px 0px 20px 0px;
 }
 
-/*-7--IMAGES css------------------------------------------*/
+/*-7-IMAGES css-*/
 
 .cover {
     /*banner images css*/
@@ -381,20 +387,17 @@ li {
     padding: 0;
 }
 
-/*-8-------CSS Animations-----------------------*/
+/*-8-CSS Animations*/
 
 /* Sweep To Right -taken from hover.css library */
 
 .hvr-sweep-to-right {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     position: relative;
-    -webkit-transition-property: color;
     transition-property: color;
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 
@@ -407,15 +410,10 @@ li {
     right: 0;
     bottom: 0;
     background: #42a5f5;
-    -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
-    -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
 
@@ -424,11 +422,10 @@ li {
 }
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-    -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-/*-9--Media querries------------------------------------------------------*/
+/*-9-Media querries*/
 
 @media only screen and (max-width: 880px) {
     #noformat {
@@ -445,7 +442,7 @@ li {
     }
 }
 
-/*-10------Forms css-----------------------*/
+/*-10-Forms css*/
 
 input[type=text] {
     /*Input  fields for mail & name css*/
@@ -473,7 +470,7 @@ textarea {
     margin: 0px;
 }
 
-#button {
+#submit-button, #clear-button{
     /*Css for both buttons in contact form*/
     border: none;
     padding: 10px;
@@ -499,11 +496,11 @@ input[type=reset] {
     width: 20%;
 }
 
-#contact_form {
+.contact_form {
     /*css for contact form*/
-    background-color: #42a5f5;
+    background-color: #42a5f5 !important;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: white !important;
     text-align: justify;
     max-width: 100%;
     font-size: 1.2em;
