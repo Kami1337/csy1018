@@ -1,3 +1,9 @@
+# 30/12 Added bio page, more pictures, cleaned up css	
+	Added comments on everything, 
+	Cleaned up redundancies
+	Removed unused css
+	99% completed
+
 # 13/12 Cleaned up css a bit, formated contact page
 	Removed redundancies
 # 10/12 - Added contact form and fixed formating
